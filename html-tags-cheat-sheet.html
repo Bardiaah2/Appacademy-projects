@@ -6,20 +6,30 @@
     <title>HTML Tags Cheat Sheet</title>
   </head>
   <body>
-    <h1>HTML Tags Cheat Sheet</h1>
+    <h1 id="Top-of-the-page">HTML Tags Cheat Sheet</h1>
 
-    <h2>Headings</h2>
+    <h2>Content Table</h2>
+    <ul>
+      <li><a href="#headings">Headings</a></li>
+      <li><a href="#paragraphs">Paragraphs</a> </li>
+      <li><a href="#lists">Lists</a> </li>
+      <li><a href="#anchors">Anchors</a> </li>
+      <li><a href="#text-emphasis">Text Emphasis</a> </li>
+      <li><a href="#div-span">Organizing content using 'div' and 'span'</a></li>
+      <li><a href="#line-breaking">Breaking text using 'br' tag</a></li>
+    </ul>
+    <h2 id="headings">Headings</h2>
 
     <p>
       Headings from 'h1' to 'h6' identify blocks and sections. Every page must have one h1.
     </p>
 
-    <h2>Paragraphs</h2>
+    <h2 id="paragraphs">Paragraphs</h2>
     <p>
       Paragraphs of texts go in 'p' tags
     </p>
 
-    <h2>Lists</h2>
+    <h2 id="lists">Lists</h2>
     <h3>Unordered List</h3>
     <p>
       Unordered lists are marked with bullet points and go in the 'ul' tag. Each item list goes in a 'li' tag.
@@ -42,7 +52,7 @@
       <li>Go back and improve your solution</li>
     </ol>
 
-    <h2>Anchors (i.e. links)</h2>
+    <h2 id="anchors">Anchors (i.e. links)</h2>
 
     <p>
       Anchor tags create links to other pages. The URL goes in the 'href' attribute.
@@ -57,6 +67,46 @@
       for more details.
     </p>
 
+    <p>
+      Anchor tags can also create links to a new location on the same page. Instead of putting a URL goes in the "href" attribute, use the "id" of the element you want to navigate to. This allows you to
+      <a href="#Top-of-the-page">
+        Jump to the top of the page.
+      </a>
+    </p>
 
+    <h2 id="text-emphasis">Text Emphasis</h2>
+    <h3>Italic</h3>
+    <em>
+      The 'em' element adds extra emphasis to the text within the opening and closing tags. This shows up as italic text in most browsers.
+    </em>
+    <h3>Bold</h3>
+    <strong>
+      You can also use the 'strong' element to emphasize text. This shows up as bold text in most browsers.
+    </strong>
+
+    <h2 id="div-span">Organizing Content using 'div' and 'span'</h2>
+
+    <h3>'div'</h3>
+    <p>
+      The 'div' is a block element, so each 'div' will show up on a new line.
+    </p>
+    <div>1st div</div>
+    <div>2nd div</div>
+    <div>3rd div</div>
+
+    <h3>'span'</h3>
+    <p>
+      The 'span' element is an inline element, so there would be no line break between each 'span'.
+    </p>
+    <span>1st span</span>
+    <span>2nd span</span>
+    <span>3rd span</span>
+
+    <h2 id="line-breaking">Breaking text using 'br' tag</h2>
+    <p>
+      Replace With Haiku line 1 (5 syllabus)<br>
+      Replace With Haiku line 2 (7 syllabus)<br>
+      Replace With Haiku line 3 (5 syllabus)<br>
+    </p>
   </body>
 </html>
